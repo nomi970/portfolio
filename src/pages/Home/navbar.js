@@ -18,7 +18,7 @@ import {Styles} from '../style.ts';
 import { Container } from '@mui/material';
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home", "About", "Skill" , "Projects" , "Blogs" , "Contact"];
 
 function DrawerAppBar() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -71,7 +71,7 @@ function DrawerAppBar() {
                     </Typography>
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{ color: "#fff" }}>
+                            <Button key={item} sx={{...Styles.font_16_500 , ...Styles.font_Montserrat , color: 'white' }}>
                                 {item}
                             </Button>
                         ))}
