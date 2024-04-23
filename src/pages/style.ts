@@ -1,5 +1,6 @@
 import { height, width } from "@fortawesome/free-solid-svg-icons/fa0";
 import { Label, Padding } from "@mui/icons-material";
+import { lineHeight } from "@mui/system";
 
 export const Styles = {
     font_45_700: {
@@ -71,8 +72,9 @@ export const Styles = {
             fontFamily: 'Montserrat'
         },
         ".css-1wc848c-MuiFormHelperText-root.Mui-error":{
-            position: 'absolute',
-            bottom: '-27px'
+            position: 'absolute !important',
+            bottom: '-27px',
+            marginLeft: '0',
         }
     },
     fromTextAerafield:{
@@ -85,8 +87,24 @@ export const Styles = {
         },
         ".css-1wc848c-MuiFormHelperText-root":{
             marginLeft: '0px',
+        },
+        ".css-1wc848c-MuiFormHelperText-root.Mui-error":{
+            position: 'absolute !important',
+            bottom: '-23px',
+            marginLeft: '0',
         }
     },
+    max365:{
+        maxWidth:'365px',
+    },
+    ln58:{
+        lineHeight: '58px',
+    },
+    footerLinksMain:{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '10px',
+    }
    
     
     

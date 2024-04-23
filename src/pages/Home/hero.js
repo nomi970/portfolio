@@ -8,11 +8,12 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Style } from '@mui/icons-material';
-
+import { Container } from '@mui/material';
 
 
 function hero() {
   return (
+    <Container>
     <Box component="section" className="hero_section">
     <Box className="hero_main">
       <Box className="hero_content mx__660">
@@ -46,6 +47,7 @@ function hero() {
       </Box>
     </Box>
   </Box>
+  </Container>
   )
 }
 

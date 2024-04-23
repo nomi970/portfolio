@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Typography, TextField, Button } from '@mui/material';
+import React, { useState } from 'react';
+import { Box, Typography, TextField, Button, CircularProgress, Container } from '@mui/material';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { Styles } from '../style.ts';
@@ -21,8 +21,28 @@ const validationSchema = Yup.object().shape({
 });
 
 function ContactUs() {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = (values, { resetForm }) => {
+    // Set loading state to true when the form is submitted
+    setIsLoading(true);
+
+    // Simulate an asynchronous operation (like form submission)
+    setTimeout(() => {
+      // After the operation is done, set loading state back to false
+      setIsLoading(false);
+
+      // Perform form submission logic here
+      alert(JSON.stringify(values));
+
+      // Reset the form after successful submission
+      resetForm();
+    }, 2000); // Replace this with your actual asynchronous operation
+  };
+
   return (
     <>  
+    <Container>
       <Box>
         <Typography variant='h2' textAlign={'center'} sx={{...Styles.font_50_700 , ...Styles.font_Montserrat}} mt={10}>Contact Us</Typography>
         <Box mt={10} sx={{...Styles.mainForm}}>
@@ -37,17 +57,14 @@ function ContactUs() {
                 phoneNumber: '',
                 message: ''
               }}
-              onSubmit={(values, { resetForm }) => {
-                alert(JSON.stringify(values));
-                resetForm();
-              }}
+              onSubmit={handleSubmit} // Pass handleSubmit function here
               validationSchema={validationSchema}
             >
               {({ values, errors, touched, handleChange, handleBlur, handleSubmit }) => (
                 <Form onSubmit={handleSubmit}>
                   <Box display="flex" flexDirection="column" alignItems="center">
                     <TextField
-                    sx={{...Styles.fromTextfield}}
+                      sx={{...Styles.fromTextfield}}
                       label="Name"
                       name="name"
                       value={values.name}
@@ -57,7 +74,7 @@ function ContactUs() {
                       helperText={touched.name && errors.name}
                     />
                     <TextField
-                    sx={{marginTop: '25px',...Styles.fromTextfield}}
+                      sx={{marginTop: '25px',...Styles.fromTextfield}}
                       label="Email"
                       name="email"
                       value={values.email}
@@ -67,7 +84,7 @@ function ContactUs() {
                       helperText={touched.email && errors.email}
                     />
                     <TextField
-                    sx={{marginTop: '25px',...Styles.fromTextfield}}
+                      sx={{marginTop: '25px',...Styles.fromTextfield}}
                       label="Phone Number"
                       name="phoneNumber"
                       value={values.phoneNumber}
@@ -77,7 +94,7 @@ function ContactUs() {
                       helperText={touched.phoneNumber && errors.phoneNumber}
                     />
                     <TextField
-                    sx={{marginTop: '25px',...Styles.fromTextAerafield}}
+                      sx={{marginTop: '25px',...Styles.fromTextAerafield}}
                       label="Message"
                       name="message"
                       multiline
@@ -88,7 +105,16 @@ function ContactUs() {
                       error={touched.message && !!errors.message}
                       helperText={touched.message && errors.message}
                     />
-                    <Button sx={{marginTop: '25px', width: '100%'}} type="submit" variant="contained" color="primary" mt={2}>Submit</Button>
+                    <Button
+                      sx={{marginTop: '25px', width: '100%'}}
+                      type="submit"
+                      variant="contained"
+                      color="primary"
+                      mt={2}
+                      disabled={isLoading} // Disable the button when loading
+                    >
+                      {isLoading ? <CircularProgress size={24} /> : 'Submit'}
+                    </Button>
                   </Box>
                 </Form>
               )}
@@ -96,6 +122,7 @@ function ContactUs() {
           </Box>
         </Box>
       </Box>
+    </Container>
     </>
   );
 }

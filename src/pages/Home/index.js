@@ -6,7 +6,9 @@ import Skill from './skill'
 import Projects from './projects'
 import Blogs from './blogs'
 import ContactUs from './contactUs'
+import Footer from './footer'
 import '../style.css'
+import { Container } from '@mui/material';
 
 
 function index() {
@@ -19,6 +21,7 @@ function index() {
       <Projects />
       {/* <Blogs /> */}
       <ContactUs />
+      <Footer />
     </>
   )
 }

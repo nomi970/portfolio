@@ -15,6 +15,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ChatIcon from "@mui/icons-material/Chat";
 import {Styles} from '../style.ts';
+import { Container } from '@mui/material';
+
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
 
@@ -44,6 +46,7 @@ function DrawerAppBar() {
     );
 
     return (
+        <Container>
         <Box sx={{ display: "flex" }}>
             <CssBaseline />
             <AppBar position="fixed">
@@ -102,6 +105,7 @@ function DrawerAppBar() {
                 {/* Your content here */}
             </Box>
         </Box>
+        </Container>
     );
 }
 

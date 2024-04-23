@@ -1,12 +1,13 @@
 import React from 'react';
 import { Box, Typography, Image } from '@mui/material';
 import { Styles } from '../style.ts'; // Make sure to import your styles
-
+import { Container } from '@mui/material';
 function Projects() {
   const laptops = [...Array(6).keys()]; // Array of length 6 representing each laptop
 
   return (
     <>
+    <Container>
       <Box>
         <Typography variant='h2' textAlign={'center'} mt={15} sx={{...Styles.font_50_700 , ...Styles.font_Montserrat}}>My Projects</Typography>
         <Box sx={Styles.main}>
@@ -20,6 +21,7 @@ function Projects() {
         ))}
         </Box>
       </Box>
+      </Container>
     </>
   );
 }

@@ -1,9 +1,10 @@
 import { Box, Typography} from '@mui/material';
 import {Styles} from '../style.ts'
 import React from 'react'
-
+import { Container } from '@mui/material';
 function about() {
   return (
+    <Container>
     <Box className='about_section'>
         <Box className='about__main'>
             <Box className='about__image'><img width={'70%'} src='./images/hero_content_image.jpg'></img></Box>
@@ -13,6 +14,7 @@ function about() {
             </Box>
         </Box>
     </Box>
+    </Container>
   )
 }
 

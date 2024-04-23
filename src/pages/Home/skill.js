@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Typography, CircularProgress } from '@mui/material';
 import { Styles } from '../style.ts';
+import { Container } from '@mui/material';
 
 function Skill() {
   const initialProgressValues = [30, 60, 65, 90, 55, 30, 68, 72 ];
@@ -38,6 +39,7 @@ function Skill() {
   }, []);
 
   return (
+    <Container>
     <Box>
       <Box>
         <Typography variant='h2' sx={{ ...Styles.font_50_700, ...Styles.font_Montserrat }} textAlign={'center'}>
@@ -90,6 +92,7 @@ function Skill() {
         </Box>
       </Box>
     </Box>
+    </Container>
   );
 }
 
