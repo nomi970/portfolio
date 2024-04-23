@@ -41,7 +41,7 @@ function ContactUs() {
   };
 
   return (
-    <>  
+    <Box sx={{...Styles.ContactMain}}>  
     <Container>
       <Box>
         <Typography variant='h2' textAlign={'center'} sx={{...Styles.font_50_700 , ...Styles.font_Montserrat}} mt={10}>Contact Us</Typography>
@@ -123,7 +123,7 @@ function ContactUs() {
         </Box>
       </Box>
     </Container>
-    </>
+    </Box>
   );
 }
 

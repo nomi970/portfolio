@@ -41,8 +41,8 @@ function Skill() {
   return (
     <Container>
     <Box>
-      <Box>
-        <Typography variant='h2' sx={{ ...Styles.font_50_700, ...Styles.font_Montserrat }} textAlign={'center'}>
+      <Box sx={{...Styles.SkillsMain }}>
+        <Typography variant='h2' sx={{ ...Styles.font_50_700, ...Styles.font_Montserrat }}>
           My Skill
         </Typography>
         {/* Add circular progress bars */}

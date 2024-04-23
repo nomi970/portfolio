@@ -8,7 +8,7 @@ function Projects() {
   return (
     <>
     <Container>
-      <Box>
+      <Box sx={{...Styles.ProjectMain}}>
         <Typography variant='h2' textAlign={'center'} mt={15} sx={{...Styles.font_50_700 , ...Styles.font_Montserrat}}>My Projects</Typography>
         <Box sx={Styles.main}>
         {laptops.map((index) => (

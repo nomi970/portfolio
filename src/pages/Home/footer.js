@@ -7,13 +7,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+// import imagePath from "../../images/Full_screen_2.png";
 function footer() {
+    const data = "/images/footer_bg.png";
   return (
-    <>
+    <Box sx={{backgroundImage: `url(${data})` , ...Styles.FbgImg}} pt={5} pb={2}>
     <Container>
-      <Box mt={10} display={'flex'} alignItems={'start'} justifyContent={'space-between'}>
+      <Box mt={5} sx={{...Styles.FooterMainBx}} >
         <Box sx={{...Styles.max365}}>
-            <Typography variant='h2' sx={{...Styles.font_50_700 , ...Styles.font_Montserrat}}>Numan</Typography>
+            <Typography variant='h2' sx={{...Styles.font_50_700 , ...Styles.font_Montserrat , ...Styles.Animated}}>Numan</Typography>
             <Typography variant='p' sx={{...Styles.font_16_500 , ...Styles.font_Montserrat}}>Transforming digital landscapes is my expertise. As a frontend developer, I specialize in crafting dynamic websites that elevate your brand. With sleek designs and seamless user experiences, let's collaborate to bring your vision to life.</Typography>
         </Box>
         <Box>
@@ -49,11 +51,11 @@ function footer() {
         </Box>
       </Box>
       <Box>
-        <Typography sx={{...Styles.font_16_500 , ...Styles.font_Montserrat}} mt={3} mb={3} textAlign={'center'}>Copyright © 2024 Numan Arshad | Powered by Numan Arshad</Typography>
+        <Typography sx={{...Styles.font_16_500 , ...Styles.font_Montserrat}} mt={3} textAlign={'center'}>Copyright © 2024 Numan Arshad | Powered by Numan Arshad</Typography>
         </Box>
       
       </Container>
-    </>
+    </Box>
   )
 }
 

@@ -1,5 +1,6 @@
 import { height, width } from "@fortawesome/free-solid-svg-icons/fa0";
-import { Label, Padding } from "@mui/icons-material";
+import { Label, Margin, Padding } from "@mui/icons-material";
+import { colors } from "@mui/material";
 import { lineHeight } from "@mui/system";
 
 export const Styles = {
@@ -104,12 +105,165 @@ export const Styles = {
         display: 'flex',
         flexDirection: 'column',
         gap: '10px',
-    }
-   
-    
-    
-    
-    
-   
+    },
+    FooterMainBx:{
+        display: 'flex',
+        justifyContent: 'space-between',
+        gap: '30px',
+        flexWrap: 'wrap',
+    },
+    FbgImg: {
+        backgroundRepeat: 'no-repeat',
+        minHeight: '350px',
+        backgroundSize: '100% 100% !important',
+        ".css-p3j5y1-MuiTypography-root": {
+          position: 'relative',
+          color: 'white',
+        },
+        ".css-p3j5y1-MuiTypography-root::before": {
+          position: 'absolute',
+          content: '""',
+          width: '155px',
+          height: '5px',
+          left: '0',
+          bottom: '0',
+          background: '#3BB3C1',
+          borderRadius: '2px',
+        },
+        ".css-p3j5y1-MuiTypography-root::after": {
+          position: 'absolute',
+          content: '""',
+          width: '6px',
+          height: '5px',
+          bottom: '0px',
+          background: '#FFFFFF',
+          borderRadius: '50px',
+          animation: 'section-title-run 5s infinite linear',
+        },
+      },
+      AboutMain:{
+        // background: '#0C0C0C',
+        // padding: '50px 0px 50px 0px !important',
+        ".css-p3j5y1-MuiTypography-root": {
+            position: 'relative',
+            color: 'black',
+          },
+          ".css-p3j5y1-MuiTypography-root::before": {
+            position: 'absolute',
+            content: '""',
+            width: '220px',
+            height: '5px',
+            left: '0',
+            bottom: '0',
+            background: '#3BB3C1',
+            borderRadius: '2px',
+          },
+          ".css-p3j5y1-MuiTypography-root::after": {
+            position: 'absolute',
+            content: '""',
+            width: '6px',
+            height: '5px',
+            bottom: '0px',
+            background: '#FFFFFF',
+            borderRadius: '50px',
+            animation: 'about_section 5s infinite linear',
+          },
+        //   p:{
+        //     color: 'white'
+        //   },
+      },
+      SkillsMain:{
+         "..css-p3j5y1-MuiTypography-root": {
+            position: 'relative',
+          },
+          ".css-p3j5y1-MuiTypography-root::before": {
+            position: 'absolute',
+            content: '""',
+            width: '180px',
+            height: '5px',
+            left: '0',
+            bottom: '0',
+            background: '#3BB3C1',
+            borderRadius: '2px',
+          },
+          ".css-p3j5y1-MuiTypography-root::after": {
+            position: 'absolute',
+            content: '""',
+            width: '6px',
+            height: '5px',
+            bottom: '0px',
+            background: '#FFFFFF',
+            borderRadius: '50px',
+            animation: 'skills_section 5s infinite linear',
+          },
+          h2:{
+            color: 'black',
+            width: 'fit-content',
+            margin: '0 auto'
+
+          },
+      },
+      ProjectMain:{
+        ".css-rr43gj-MuiTypography-root": {
+            position: 'relative',
+          },
+          ".css-rr43gj-MuiTypography-root::before": {
+            position: 'absolute',
+            content: '""',
+            width: '275px',
+            height: '5px',
+            left: '0',
+            bottom: '0',
+            background: '#3BB3C1',
+            borderRadius: '2px',
+          },
+          ".css-rr43gj-MuiTypography-root::after": {
+            position: 'absolute',
+            content: '""',
+            width: '6px',
+            height: '5px',
+            bottom: '0px',
+            background: '#FFFFFF',
+            borderRadius: '50px',
+            animation: 'project_section 5s infinite linear',
+          },
+          h2:{
+            color: 'black',
+            width: 'fit-content',
+            margin: '0 auto'
+
+          },
+      },
+      ContactMain:{
+        ".css-ksc0ro-MuiTypography-root": {
+            position: 'relative',
+          },
+          ".css-ksc0ro-MuiTypography-root::before": {
+            position: 'absolute',
+            content: '""',
+            width: '255px',
+            height: '5px',
+            left: '0',
+            bottom: '0',
+            background: '#3BB3C1',
+            borderRadius: '2px',
+          },
+          ".css-ksc0ro-MuiTypography-root::after": {
+            position: 'absolute',
+            content: '""',
+            width: '6px',
+            height: '5px',
+            bottom: '0px',
+            background: '#FFFFFF',
+            borderRadius: '50px',
+            animation: 'contact_section 5s infinite linear',
+          },
+          h2:{
+            color: 'black',
+            width: 'fit-content',
+            margin: '0 auto'
+
+          },
+      }
     
 };
