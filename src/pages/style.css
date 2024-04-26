@@ -267,7 +267,7 @@ color: white;
   animation: section-title-run 5s infinite linear; */
 }
 .css-19lxk5y{
-  background-image: url(../../public/images/profile.png) !important;
+  background-image: url(../../public/images/profile1.png) !important;
   height: 400px;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -420,12 +420,12 @@ color: white;
   -webkit-justify-content: center;
   background-image: linear-gradient(180deg, #3BB3C1 0%, #3BB3C1 100%);
   -webkit-background-image: linear-gradient(180deg, #3BB3C1 0%, #3BB3C1 100%);
-  box-shadow: 0 2px 4px 0 #3BB3C1;
-  -webkit-box-shadow: 0 2px 4px 0 #3BB3C1;
+  /* box-shadow: 0 2px 4px 0 #3BB3C1;
+  -webkit-box-shadow: 0 2px 4px 0 #3BB3C1; */
 }
 .icon-block img {
   margin: 0px auto;
-  width: 86%;
+  width: 45%;
   animation: Rotate-reverse 20s linear infinite;
   -webkit-animation: Rotate-reverse 20s linear infinite;
 }

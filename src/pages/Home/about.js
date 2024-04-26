@@ -12,30 +12,30 @@ function about() {
             <Box className="main" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 4 }}>
           <Box className="big-circle" sx={{ display: 'flex', flexDirection: 'row', mb: 4 }}>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/web-dev-icon.png" alt="web design icon" />
+              <img src="./images/html.svg" alt="html" />
             </Box>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/game-design-icon.png" alt="game design icon" />
+              <img src="./images/js.svg" alt="js" />
             </Box>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/game-dev-icon.png" alt="game dev icon" />
+              <img src="./images/react.svg" alt="react" />
             </Box>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/ui-ux-icon.png" alt="ui-ux icon" />
+              <img src="./images/mui.svg" alt="ui-ux icon" />
             </Box>
           </Box>
           <Box className="circle" sx={{ display: 'flex', flexDirection: 'row', mb: 4 }}>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/app-icon.png" alt="app icon" />
+              <img src="./images/tailwind-css.svg" alt="tailwind css" />
             </Box>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/blockchain-icon.png" alt="blockchain icon" />
+              <img src="./images/bootstrap.svg" alt="" />
             </Box>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/arvr-icon.png" alt="ar-vr icon" />
+              <img src="./images/css.svg" alt="css" />
             </Box>
             <Box className="icon-block">
-              <img src="https://www.yudiz.com/codepen/animated-portfolio/artificial-intelligence-icon.png" alt="artificial intelligence icon" />
+              <img src="./images/jquery.svg" alt="artificial intelligence icon" />
             </Box>
           </Box>
           <Box className="center-logo" sx={{ mb: 4 }}>
