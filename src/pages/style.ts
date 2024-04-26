@@ -1,5 +1,5 @@
 import { height, width } from "@fortawesome/free-solid-svg-icons/fa0";
-import { Label, Margin, Padding } from "@mui/icons-material";
+import { BorderTop, Label, Margin, Padding } from "@mui/icons-material";
 import { colors } from "@mui/material";
 import { lineHeight } from "@mui/system";
 
@@ -27,12 +27,24 @@ export const Styles = {
         fontWeight: 700
     },
     SocialIconsBtn:{
-        ".css-78trlr-MuiButtonBase-root-MuiIconButton-root":{
-            border: "1px solid #1976d2"
-        }
+        ".css-i4bv87-MuiSvgIcon-root":{
+          color: '#3BB3C1',
+        },
+    },
+    ftIconbdr:{
+      background: 'white',
+      borderRadius: '50%',
+    },
+    
+    clrWhite:{
+      color: 'white',
     },
     Bxshadow:{
         // boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
+    },
+    ftrBr:{
+      borderTop: '1px solid white !important',
+      paddingTop: '20px',
     },
     main:{
         display: 'grid',
@@ -113,9 +125,7 @@ export const Styles = {
         flexWrap: 'wrap',
     },
     FbgImg: {
-        backgroundRepeat: 'no-repeat',
-        minHeight: '350px',
-        backgroundSize: '100% 100% !important',
+        backgroundColor: '#3BB3C1',
         ".css-p3j5y1-MuiTypography-root": {
           position: 'relative',
           color: 'white',
@@ -142,7 +152,7 @@ export const Styles = {
         },
       },
       AboutMain:{
-        // background: '#0C0C0C',
+        background: '#F1F1F1',
         // padding: '50px 0px 50px 0px !important',
         ".css-p3j5y1-MuiTypography-root": {
             position: 'relative',
@@ -173,7 +183,7 @@ export const Styles = {
         //   },
       },
       SkillsMain:{
-         "..css-p3j5y1-MuiTypography-root": {
+         ".css-p3j5y1-MuiTypography-root": {
             position: 'relative',
           },
           ".css-p3j5y1-MuiTypography-root::before": {

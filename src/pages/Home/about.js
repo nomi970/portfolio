@@ -39,7 +39,7 @@ function about() {
             </Box>
           </Box>
           <Box className="center-logo" sx={{ mb: 4 }}>
-            <img src="https://www.yudiz.com/codepen/animated-portfolio/logo.png" alt="logo" />
+            {/* <img src="https://www.yudiz.com/codepen/animated-portfolio/logo.png" alt="logo" /> */}
           </Box>
         </Box>
             <Box className='about__content mx__660' sx={{ flexBasis: '50%', ml: { xs: 0, md: 'auto' }, textAlign: { xs: 'center', md: 'left' } }}>
