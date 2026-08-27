@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-sans bg-[#090d16] text-gray-100 antialiased selection:bg-cyan-500/20 selection:text-cyan-400`}
+        className={`${inter.variable} font-sans bg-[var(--background)] text-[var(--foreground)] antialiased selection:bg-cyan-500/20 selection:text-cyan-400`}
       >
         <Providers>
           <div className="relative flex flex-col min-h-screen">

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, ArrowRight, FileText, Send, Code, Terminal, CheckCircle2 } from "lucide-react";
+import { Sparkles, ArrowRight, FileText, Download, Send, Code, Terminal, CheckCircle2 } from "lucide-react";
 import { personalInfo } from "@/data/personal";
 import { ResumeModal } from "@/components/ResumeModal";
 
@@ -80,6 +80,14 @@ export const HeroSection: React.FC = () => {
                   <FileText className="w-4 h-4 text-cyan-400" />
                   <span>View Resume</span>
                 </button>
+
+                <a
+                  href="/api/download-cv"
+                  className="flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-black bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 rounded-2xl shadow-lg shadow-cyan-500/20 hover:scale-105 transition-all duration-300"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Download CV</span>
+                </a>
 
                 <a
                   href="#contact"

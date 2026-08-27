@@ -188,7 +188,7 @@ export const projectsData: Project[] = [
   {
     id: 14,
     name: "Sync4Tech",
-    url: "https://beta.sync4tech.co/",
+    url: "https://sync4tech.co/",
     category: "Web Applications",
     description:
       "Modern responsive web platform providing digital transformation workflows, cross-device compatibility, and scalable tech infrastructure solutions.",

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Download, Printer, Mail, Phone, MapPin, ExternalLink, Briefcase, GraduationCap, Code } from "lucide-react";
+import { X, Download, Printer, Mail, Phone, MapPin, ExternalLink, Briefcase, Code } from "lucide-react";
 import { personalInfo } from "@/data/personal";
 import { experienceData } from "@/data/experience";
 
@@ -49,13 +49,24 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </div>
 
               <div className="flex items-center gap-3">
+                {/* Download PDF */}
+                <a
+                  href="/api/download-cv"
+                  className="flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-black bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 rounded-lg transition-all hover:scale-105 shadow-lg shadow-cyan-500/20"
+                  title="Download CV as PDF"
+                >
+                  <Download className="w-4 h-4" />
+                  <span className="hidden sm:inline">Download CV</span>
+                </a>
+
+                {/* Print */}
                 <button
                   onClick={handlePrint}
                   className="flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-gray-200 bg-white/5 hover:bg-white/15 border border-white/10 rounded-lg transition-colors"
-                  title="Print / Save PDF"
+                  title="Print Resume"
                 >
-                  <Printer className="w-4 h-4 text-cyan-400" />
-                  <span className="hidden sm:inline">Print / Save PDF</span>
+                  <Printer className="w-4 h-4 text-gray-400" />
+                  <span className="hidden sm:inline">Print</span>
                 </button>
 
                 <button
